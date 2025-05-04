@@ -11,7 +11,18 @@
 </head>
 <body margin:0;overflow:hidden>
     <h1>Lorentz Chaos Equation</h1>
-    <script src="attractors.js"></script>
+    <select id="systemSelector">
+        <option value="lorentz">Lorenz</option>
+        <option value="rossler">Rossler</option>
+        <option value="dadras">Dadras</option>
+      </select>
+      <button onclick="startSystem()">Start</button>      
+    <button onclick="restartSketch()">Restart</button>
+    <button onclick="saveImage()">Save It!</button>
+    <script src="Attractor.js"></script>
     <script src="script.js"></script>
+    <script src="LorenzAttractor.js"></script>
+    <script src="RosslerAttractor.js"></script>
+    <script src="Dadras.js"></script>
 </body>
 </html>
